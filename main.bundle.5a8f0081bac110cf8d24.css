@@ -6,13 +6,13 @@
 
 @keyframes redblink {
   0% {
-    background-color: #51b93c; }
+    background-color: #41b549; }
   100% {
     background-color: rgba(0, 0, 0, 0); } }
 
 @keyframes greenblink {
   0% {
-    background-color: #f35151; }
+    background-color: #ff4048; }
   100% {
     background-color: rgba(0, 0, 0, 0); } }
 
@@ -554,4 +554,4 @@
     font-size: 0.57rem; }
 
 
-/*# sourceMappingURL=main.bundle.f57d0629435cf862ac60.css.map*/
+/*# sourceMappingURL=main.bundle.5a8f0081bac110cf8d24.css.map*/
