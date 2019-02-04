@@ -125,7 +125,9 @@ body {
     #application-root .title-text {
       flex-wrap: wrap; } }
   #application-root .header-title {
-    white-space: nowrap; }
+    white-space: nowrap;
+    display: inline;
+    font-size: 1.66rem; }
   #application-root .title-text .logo-text {
     margin-right: 10px; }
   #application-root .title .description {
@@ -570,4 +572,4 @@ body {
     font-size: 0.57rem; }
 
 
-/*# sourceMappingURL=main.bundle.9877e4e4810c4ea5618b.css.map*/
+/*# sourceMappingURL=main.bundle.82547da3d6170476bc4d.css.map*/
