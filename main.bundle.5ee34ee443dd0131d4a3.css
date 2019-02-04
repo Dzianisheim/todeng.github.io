@@ -64,512 +64,517 @@ body {
   @media screen and (max-width: 1000px) {
     #application-root {
       width: auto; } }
-  #application-root a {
-    text-decoration: none;
-    color: white; }
-  #application-root a:hover {
-    text-decoration: underline; }
-  #application-root a:active {
-    text-decoration: underline; }
-  #application-root h1 {
-    margin: 0px; }
-  #application-root .flex {
-    display: flex;
-    align-items: center; }
-  #application-root .header-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between; }
-  @media screen and (max-width: 800px) {
-    #application-root .header-wrapper {
-      justify-content: center;
-      flex-direction: column; } }
-  #application-root .rounded {
-    border: 1px solid white;
-    border-radius: 8px; }
-  #application-root .content-wrapper {
-    display: flex;
-    flex-direction: column; }
-  #application-root .store-button {
-    display: flex;
-    align-items: center; }
-  #application-root .store-button img {
-    height: 35px; }
-  #application-root .column {
-    display: flex;
-    flex-direction: column; }
-  #application-root .logo-text {
-    font-size: 1.5rem;
-    font-weight: 600; }
-  #application-root .grey {
-    color: rgba(255, 255, 255, 0.3); }
-  #application-root .red {
-    color: #ff4048; }
-  #application-root .green {
-    color: #41b549; }
-  #application-root .blue {
-    color: #207abf; }
-  #application-root .title {
-    display: flex;
-    flex: 4;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-  #application-root .title-text {
-    flex: 1;
-    font-size: 1.66rem;
-    letter-spacing: 0.32px;
-    margin-bottom: 17px;
-    font-weight: 600; }
-  @media screen and (max-width: 800px) {
-    #application-root .title-text {
-      flex-wrap: wrap; } }
-  #application-root .header-title {
-    white-space: nowrap;
-    display: inline;
-    font-size: 1.66rem; }
-  #application-root .title-text .logo-text {
-    margin-right: 10px; }
-  #application-root .title .description {
-    text-align: justify;
-    font-size: 0.8125rem;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 22px; }
-  #application-root .date-n-store {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; }
-  #application-root .date-n-store a {
-    display: flex;
-    flex: 0.75;
-    justify-content: flex-end;
-    align-self: stretch; }
-  @media screen and (max-width: 800px) {
-    #application-root .date-n-store {
-      flex-direction: column; }
-    #application-root .date-n-store a {
-      justify-content: center;
-      margin-top: 10px; } }
-  #application-root .date {
-    font-size: 0.9rem;
-    font-weight: 600;
-    flex: 1;
-    letter-spacing: 0.85px; }
-  #application-root .twitter {
-    display: flex;
-    flex: 1;
-    align-items: center; }
-  #application-root .twitter span {
-    letter-spacing: 0.76px;
-    font-size: 0.6875rem;
-    opacity: 0.8;
-    margin-left: 7px; }
-  #application-root .twitter img {
-    width: 16px;
-    height: 14px; }
-  #application-root .store {
-    display: flex;
-    flex: 1;
-    justify-content: space-between; }
-  #application-root .confidence-container-wrapper {
-    display: flex;
-    flex: 3;
-    justify-content: center;
-    flex-direction: row; }
-  #application-root .confidence-container {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    margin-left: 45px;
-    max-width: 305px; }
-  @media screen and (max-width: 800px) {
-    #application-root .confidence-container {
-      margin: 10px 10px 0; } }
-  #application-root .confidence-header {
-    text-align: center;
-    padding: 9px 0px;
-    font-size: 0.9375rem;
-    letter-spacing: 1.15px;
-    font-weight: 600; }
-  #application-root .confidence-content {
-    display: flex;
-    flex: 1; }
-  #application-root .confidence-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1; }
-  #application-root .confidence-block.red {
-    background-color: rgba(234, 22, 22, 0.2);
-    border-top: 1px solid white; }
-  #application-root .confidence-block.blue {
-    background-color: rgba(44, 144, 215, 0.2);
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-top: 1px solid white; }
-  #application-root .confidence-block.green {
-    background-color: rgba(94, 172, 3, 0.2);
-    border-top: 1px solid white; }
-  #application-root .confidence-text {
-    font-size: 1rem;
-    letter-spacing: 1.83px; }
-  #application-root .confidence-digit {
-    font-size: 2rem;
-    letter-spacing: 0.1px;
-    line-height: 45px; }
-  #application-root .confidence-percentage {
-    font-size: 1.35rem;
-    letter-spacing: 0.1px;
-    line-height: 45px; }
-  #application-root .confidence-text.green,
-  #application-root .confidence-digit.green {
-    color: #89ff00; }
-  #application-root .confidence-text.blue,
-  #application-root .confidence-digit.blue {
-    color: #0095ff; }
-  #application-root .confidence-text.red,
-  #application-root .confidence-digit.red {
-    color: red; }
-  #application-root .cards-section {
-    padding: 30px 20px 0px 20px;
-    margin: 0 -20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background: linear-gradient(to bottom, rgba(11, 25, 46, 0) 0%, rgba(11, 25, 46, 0) 38%, #0b192e 100%); }
-  @media screen and (max-width: 800px) {
-    #application-root .cards-section {
-      flex-direction: column;
-      justify-content: center; } }
-  #application-root .card-wrapper {
-    border-width: 0.5px;
-    border-color: rgba(255, 255, 255, 0.4);
-    flex: 1;
-    max-width: 225px; }
-  @media screen and (max-width: 800px) {
-    #application-root .card-wrapper {
-      min-width: 300px;
-      margin-top: 20px; } }
-  #application-root .card-wrapper img {
-    width: 42px;
-    height: 42px;
-    border-radius: 21px;
-    margin-right: 12px; }
-  #application-root .card-header {
-    padding: 11px 12px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  #application-root .title-wrapper {
-    display: flex;
-    flex-direction: column; }
-  #application-root .card-wrapper .name {
-    font-size: 0.8rem;
-    font-weight: bold;
-    line-height: 19px; }
-  #application-root .card-wrapper .rating {
-    font-size: 0.63rem;
-    color: rgba(255, 255, 255, 0.6);
-    letter-spacing: 0.5px; }
-  #application-root .rating span {
-    color: white;
-    padding: 0px 5px;
-    border-style: none;
-    border-radius: 3px;
-    margin-left: 3px;
-    letter-spacing: 1.08px;
-    font-weight: bold; }
-  #application-root .rating .buy {
-    background-color: #41b549; }
-  #application-root .rating .hodl {
-    background-color: #207abf; }
-  #application-root .rating .sell {
-    background-color: #ff4048; }
-  #application-root .rank {
-    font-size: 1.38rem;
-    font-weight: 100;
-    margin-top: -10px;
-    margin-right: -8px; }
-  #application-root .card-section {
-    padding: 5px 12px 7px 12px;
-    border-top: 0.5px solid rgba(255, 255, 255, 0.4); }
-  #application-root .card-footer {
-    padding: 5px 12px 11px 12px;
-    border-top: 0.5px solid rgba(255, 255, 255, 0.4); }
-  #application-root .card-section .title,
-  #application-root .card-footer .title {
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.4);
-    font-weight: 100;
-    letter-spacing: 1.4px; }
-  #application-root .bars {
-    margin-top: 2px; }
-  #application-root .bars span {
-    display: flex;
-    flex: 0.3;
-    font-weight: bold;
-    font-size: 0.6875rem;
-    letter-spacing: 1.08px; }
-  #application-root .bars .bar {
-    flex: 1; }
-  #application-root .bar-line {
-    flex-direction: row;
-    justify-content: space-between;
-    flex: 1; }
-  #application-root .bar {
-    flex: 1;
-    margin-right: 12px;
-    background-color: #263750;
-    border-radius: 7px;
-    height: 7px;
-    overflow: hidden; }
-  #application-root .bar.no-margin {
-    margin-right: 0; }
-  #application-root .bar.wide {
-    border-radius: 11px;
-    height: 11px; }
-  #application-root .bar div {
-    border-radius: 8px;
-    height: 8px; }
-  #application-root .bar.wide div {
-    border-radius: 11px;
-    height: 11px; }
-  #application-root .bar .green {
-    background-color: #41b549; }
-  #application-root .bar .blue {
-    background-color: #207abf; }
-  #application-root .bar .red {
-    background-color: #ff4048; }
-  #application-root .forecast {
-    margin-top: 5px;
-    justify-content: space-between; }
-  #application-root .forecast-block {
-    display: flex;
-    flex-direction: column; }
-    #application-root .forecast-block span {
-      font-size: 0.6875rem;
-      font-weight: 600; }
-    #application-root .forecast-block .header {
-      font-weight: bold;
-      color: rgba(255, 255, 255, 0.3);
-      letter-spacing: 0.58px;
-      line-height: 16px; }
-    #application-root .forecast-block .value {
-      align-self: flex-start; }
-    #application-root .forecast-block .projection {
-      letter-spacing: 1.05px;
-      font-weight: bold; }
-    #application-root .forecast-block .triangle {
-      font-size: 0.63rem; }
-  #application-root .predict-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start; }
-  #application-root .predict-card {
-    width: 390px;
-    margin: 20px 0 0 0;
-    border-width: 0.5px;
-    border-color: rgba(255, 255, 255, 0.4);
-    flex: 1;
-    background-color: rgba(0, 0, 0, 0.3); }
-  #application-root .predict-card.right {
-    margin-left: 27px; }
-  @media screen and (max-width: 800px) {
-    #application-root .predict-section {
-      flex-direction: column;
+  #application-root .rating-page {
+    opacity: 0;
+    transition: opacity 0.5s; }
+    #application-root .rating-page.loaded {
+      opacity: 1; }
+    #application-root .rating-page a {
+      text-decoration: none;
+      color: white; }
+    #application-root .rating-page a:hover {
+      text-decoration: underline; }
+    #application-root .rating-page a:active {
+      text-decoration: underline; }
+    #application-root .rating-page h1 {
+      margin: 0px; }
+    #application-root .rating-page .flex {
+      display: flex;
       align-items: center; }
-    #application-root .predict-card.right {
-      margin-left: 0px; }
-    #application-root .predict-card {
-      width: auto; } }
-  #application-root .predict-card .header {
-    padding: 11px 16px;
-    display: flex;
-    align-items: flex-end; }
-  #application-root .predict-card .header span {
-    font-style: italic;
-    font-size: 0.86rem;
-    flex: 2;
-    line-height: 20px; }
-  #application-root .predict-card .header .column-title {
-    flex: 2;
-    font-weight: bold;
-    opacity: 0.3;
-    color: white;
-    font-size: 0.63rem;
-    font-style: normal;
-    text-align: center;
-    letter-spacing: 1.05px;
-    line-height: 15px; }
-  #application-root .predict-card .header .column-headline {
-    display: flex;
-    flex: 3; }
-  #application-root .predict-card .content {
-    padding: 14px 16px 14px 16px;
-    border-top: 0.5px solid rgba(255, 255, 255, 0.4); }
-  #application-root .predict-card .content .line {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 8px; }
-  #application-root .predict-card .content .predict-label {
-    flex: 1; }
-  #application-root .predict-card .content .line .line-bar {
-    display: flex;
-    flex-direction: row;
-    flex: 2;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: 5px; }
-  #application-root .predict-card .content .line .line-bar.narrow {
-    flex: 1; }
-  #application-root .predict-card .btc-label {
-    flex: 3; }
-  #application-root .predict-card .content span {
-    opacity: 0.8;
-    color: white;
-    font-size: 0.8125rem;
-    line-height: 18px; }
-  #application-root .predict-card .content .digit {
-    white-space: nowrap;
-    text-align: center;
-    opacity: 0.3;
-    color: white;
-    font-weight: bold;
-    flex: 0.3;
-    font-size: 0.6875rem;
-    letter-spacing: 1.08px; }
-  #application-root .predict-card.right .content .digit {
-    flex: 0.7; }
-  #application-root .table-scroll-wrapper {
-    overflow-x: auto; }
-  #application-root .table-section {
-    margin: 0 -20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: auto; }
-  #application-root .table-section .scroll-wrapper {
-    width: 100%; }
-  @media screen and (max-width: 800px) {
-    #application-root .table-section {
-      align-items: flex-start; }
-    #application-root .table-section .scroll-wrapper {
-      width: 800px; } }
-  #application-root .table-row {
-    justify-content: space-evenly;
-    align-self: stretch;
-    padding: 0 20px; }
-  #application-root .table-row.dark {
-    background-color: #0b192e; }
-  #application-root .table-row.light {
-    background-color: #102442; }
-  #application-root .table-row.header .row-group {
-    padding: 10px 0 0 0; }
-  #application-root .row-group {
-    flex: 0.8;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 0; }
-  #application-root .row-group.name {
-    flex: 1.5;
-    justify-content: flex-start; }
-  #application-root .row-group.name span {
-    font-weight: normal; }
-  #application-root .row-group img {
-    margin-left: 20px;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    margin-right: 12px; }
-  @media screen and (max-width: 800px) {
-    #application-root .row-group img {
-      width: 10px;
-      height: 10px;
-      border-radius: 5px; } }
-  #application-root .row-group span {
-    font-size: 0.69rem;
-    letter-spacing: 1.08px;
-    font-weight: bold; }
-  #application-root .row-group.name .order {
-    text-align: end;
-    font-size: 1rem;
-    white-space: nowrap;
-    flex: 0.3;
-    letter-spacing: 0px;
-    font-weight: 300; }
-  #application-root .row-group.bsh {
-    flex: 2; }
-  #application-root .row-group .coin-name {
-    flex: 1;
-    letter-spacing: 0;
-    font-size: 0.75rem; }
-  #application-root .row-group .triangle {
-    font-size: 0.69rem; }
-  #application-root .table-row.header {
-    border-bottom: 0.5px solid #566476; }
-  #application-root .table-row.header span {
-    text-align: center;
-    font-weight: bold;
-    font-size: 0.6875rem;
-    color: #566476;
-    letter-spacing: 0.46px; }
-  #application-root .row-group.price span {
-    flex: 1;
-    text-align: start;
-    text-align: center; }
-  #application-root .row-group.projection span {
-    flex: 1;
-    text-align: center;
-    letter-spacing: 1.05px; }
-  #application-root footer {
-    display: flex;
-    align-items: center;
-    margin-bottom: -20px; }
-  #application-root footer img {
-    margin-top: -25px;
-    height: 150px; }
-  #application-root .footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-  #application-root .footer-wrapper .logo-wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 200px;
-    margin-top: -35px; }
-  @media screen and (max-width: 800px) {
-    #application-root footer img {
-      display: none; }
-    #application-root .footer-wrapper {
+    #application-root .rating-page .header-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between; }
+    @media screen and (max-width: 800px) {
+      #application-root .rating-page .header-wrapper {
+        justify-content: center;
+        flex-direction: column; } }
+    #application-root .rating-page .rounded {
+      border: 1px solid white;
+      border-radius: 8px; }
+    #application-root .rating-page .content-wrapper {
+      display: flex;
+      flex-direction: column; }
+    #application-root .rating-page .store-button {
+      display: flex;
+      align-items: center; }
+    #application-root .rating-page .store-button img {
+      height: 35px; }
+    #application-root .rating-page .column {
+      display: flex;
+      flex-direction: column; }
+    #application-root .rating-page .logo-text {
+      font-size: 1.5rem;
+      font-weight: 600; }
+    #application-root .rating-page .grey {
+      color: rgba(255, 255, 255, 0.3); }
+    #application-root .rating-page .red {
+      color: #ff4048; }
+    #application-root .rating-page .green {
+      color: #41b549; }
+    #application-root .rating-page .blue {
+      color: #207abf; }
+    #application-root .rating-page .title {
+      display: flex;
+      flex: 4;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    #application-root .rating-page .title-text {
+      flex: 1;
+      font-size: 1.66rem;
+      letter-spacing: 0.32px;
+      margin-bottom: 17px;
+      font-weight: 600; }
+    @media screen and (max-width: 800px) {
+      #application-root .rating-page .title-text {
+        flex-wrap: wrap; } }
+    #application-root .rating-page .header-title {
+      white-space: nowrap;
+      display: inline;
+      font-size: 1.66rem; }
+    #application-root .rating-page .title-text .logo-text {
+      margin-right: 10px; }
+    #application-root .rating-page .title .description {
+      text-align: justify;
+      font-size: 0.8125rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 22px; }
+    #application-root .rating-page .date-n-store {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; }
+    #application-root .rating-page .date-n-store a {
+      display: flex;
+      flex: 0.75;
+      justify-content: flex-end;
+      align-self: stretch; }
+    @media screen and (max-width: 800px) {
+      #application-root .rating-page .date-n-store {
+        flex-direction: column; }
+      #application-root .rating-page .date-n-store a {
+        justify-content: center;
+        margin-top: 10px; } }
+    #application-root .rating-page .date {
+      font-size: 0.9rem;
+      font-weight: 600;
+      flex: 1;
+      letter-spacing: 0.85px; }
+    #application-root .rating-page .twitter {
+      display: flex;
+      flex: 1;
+      align-items: center; }
+    #application-root .rating-page .twitter span {
+      letter-spacing: 0.76px;
+      font-size: 0.6875rem;
+      opacity: 0.8;
+      margin-left: 7px; }
+    #application-root .rating-page .twitter img {
+      width: 16px;
+      height: 14px; }
+    #application-root .rating-page .store {
+      display: flex;
+      flex: 1;
+      justify-content: space-between; }
+    #application-root .rating-page .confidence-container-wrapper {
+      display: flex;
+      flex: 3;
+      justify-content: center;
+      flex-direction: row; }
+    #application-root .rating-page .confidence-container {
+      flex: 3;
+      display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      justify-content: center; }
-    #application-root .footer-wrapper .logo-wrapper {
-      margin-top: 0px; } }
-  #application-root .footer-wrapper .logo-wrapper .description {
-    font-size: 0.875rem;
-    letter-spacing: -0.07px;
-    margin-top: 15px;
-    font-weight: 600;
-    line-height: 20px; }
-  #application-root .disclamer-wrapper {
-    display: flex;
-    flex: 2; }
-  #application-root .disclamer-wrapper span {
-    color: #e9ebf1;
-    opacity: 0.5;
-    font-size: 0.57rem; }
+      margin-left: 45px;
+      max-width: 305px; }
+    @media screen and (max-width: 800px) {
+      #application-root .rating-page .confidence-container {
+        margin: 10px 10px 0; } }
+    #application-root .rating-page .confidence-header {
+      text-align: center;
+      padding: 9px 0px;
+      font-size: 0.9375rem;
+      letter-spacing: 1.15px;
+      font-weight: 600; }
+    #application-root .rating-page .confidence-content {
+      display: flex;
+      flex: 1; }
+    #application-root .rating-page .confidence-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex: 1; }
+    #application-root .rating-page .confidence-block.red {
+      background-color: rgba(234, 22, 22, 0.2);
+      border-top: 1px solid white; }
+    #application-root .rating-page .confidence-block.blue {
+      background-color: rgba(44, 144, 215, 0.2);
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      border-top: 1px solid white; }
+    #application-root .rating-page .confidence-block.green {
+      background-color: rgba(94, 172, 3, 0.2);
+      border-top: 1px solid white; }
+    #application-root .rating-page .confidence-text {
+      font-size: 1rem;
+      letter-spacing: 1.83px; }
+    #application-root .rating-page .confidence-digit {
+      font-size: 2rem;
+      letter-spacing: 0.1px;
+      line-height: 45px; }
+    #application-root .rating-page .confidence-percentage {
+      font-size: 1.35rem;
+      letter-spacing: 0.1px;
+      line-height: 45px; }
+    #application-root .rating-page .confidence-text.green,
+    #application-root .rating-page .confidence-digit.green {
+      color: #89ff00; }
+    #application-root .rating-page .confidence-text.blue,
+    #application-root .rating-page .confidence-digit.blue {
+      color: #0095ff; }
+    #application-root .rating-page .confidence-text.red,
+    #application-root .rating-page .confidence-digit.red {
+      color: red; }
+    #application-root .rating-page .cards-section {
+      padding: 30px 20px 0px 20px;
+      margin: 0 -20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background: linear-gradient(to bottom, rgba(11, 25, 46, 0) 0%, rgba(11, 25, 46, 0) 38%, #0b192e 100%); }
+    @media screen and (max-width: 800px) {
+      #application-root .rating-page .cards-section {
+        flex-direction: column;
+        justify-content: center; } }
+    #application-root .rating-page .card-wrapper {
+      border-width: 0.5px;
+      border-color: rgba(255, 255, 255, 0.4);
+      flex: 1;
+      max-width: 225px; }
+    @media screen and (max-width: 800px) {
+      #application-root .rating-page .card-wrapper {
+        min-width: 300px;
+        margin-top: 20px; } }
+    #application-root .rating-page .card-wrapper img {
+      width: 42px;
+      height: 42px;
+      border-radius: 21px;
+      margin-right: 12px; }
+    #application-root .rating-page .card-header {
+      padding: 11px 12px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    #application-root .rating-page .title-wrapper {
+      display: flex;
+      flex-direction: column; }
+    #application-root .rating-page .card-wrapper .name {
+      font-size: 0.8rem;
+      font-weight: bold;
+      line-height: 19px; }
+    #application-root .rating-page .card-wrapper .rating {
+      font-size: 0.63rem;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.5px; }
+    #application-root .rating-page .rating span {
+      color: white;
+      padding: 0px 5px;
+      border-style: none;
+      border-radius: 3px;
+      margin-left: 3px;
+      letter-spacing: 1.08px;
+      font-weight: bold; }
+    #application-root .rating-page .rating .buy {
+      background-color: #41b549; }
+    #application-root .rating-page .rating .hodl {
+      background-color: #207abf; }
+    #application-root .rating-page .rating .sell {
+      background-color: #ff4048; }
+    #application-root .rating-page .rank {
+      font-size: 1.38rem;
+      font-weight: 100;
+      margin-top: -10px;
+      margin-right: -8px; }
+    #application-root .rating-page .card-section {
+      padding: 5px 12px 7px 12px;
+      border-top: 0.5px solid rgba(255, 255, 255, 0.4); }
+    #application-root .rating-page .card-footer {
+      padding: 5px 12px 11px 12px;
+      border-top: 0.5px solid rgba(255, 255, 255, 0.4); }
+    #application-root .rating-page .card-section .title,
+    #application-root .rating-page .card-footer .title {
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.4);
+      font-weight: 100;
+      letter-spacing: 1.4px; }
+    #application-root .rating-page .bars {
+      margin-top: 2px; }
+    #application-root .rating-page .bars span {
+      display: flex;
+      flex: 0.3;
+      font-weight: bold;
+      font-size: 0.6875rem;
+      letter-spacing: 1.08px; }
+    #application-root .rating-page .bars .bar {
+      flex: 1; }
+    #application-root .rating-page .bar-line {
+      flex-direction: row;
+      justify-content: space-between;
+      flex: 1; }
+    #application-root .rating-page .bar {
+      flex: 1;
+      margin-right: 12px;
+      background-color: #263750;
+      border-radius: 7px;
+      height: 7px;
+      overflow: hidden; }
+    #application-root .rating-page .bar.no-margin {
+      margin-right: 0; }
+    #application-root .rating-page .bar.wide {
+      border-radius: 11px;
+      height: 11px; }
+    #application-root .rating-page .bar div {
+      border-radius: 8px;
+      height: 8px; }
+    #application-root .rating-page .bar.wide div {
+      border-radius: 11px;
+      height: 11px; }
+    #application-root .rating-page .bar .green {
+      background-color: #41b549; }
+    #application-root .rating-page .bar .blue {
+      background-color: #207abf; }
+    #application-root .rating-page .bar .red {
+      background-color: #ff4048; }
+    #application-root .rating-page .forecast {
+      margin-top: 5px;
+      justify-content: space-between; }
+    #application-root .rating-page .forecast-block {
+      display: flex;
+      flex-direction: column; }
+      #application-root .rating-page .forecast-block span {
+        font-size: 0.6875rem;
+        font-weight: 600; }
+      #application-root .rating-page .forecast-block .header {
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.3);
+        letter-spacing: 0.58px;
+        line-height: 16px; }
+      #application-root .rating-page .forecast-block .value {
+        align-self: flex-start; }
+      #application-root .rating-page .forecast-block .projection {
+        letter-spacing: 1.05px;
+        font-weight: bold; }
+      #application-root .rating-page .forecast-block .triangle {
+        font-size: 0.63rem; }
+    #application-root .rating-page .predict-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+    #application-root .rating-page .predict-card {
+      width: 390px;
+      margin: 20px 0 0 0;
+      border-width: 0.5px;
+      border-color: rgba(255, 255, 255, 0.4);
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.3); }
+    #application-root .rating-page .predict-card.right {
+      margin-left: 27px; }
+    @media screen and (max-width: 800px) {
+      #application-root .rating-page .predict-section {
+        flex-direction: column;
+        align-items: center; }
+      #application-root .rating-page .predict-card.right {
+        margin-left: 0px; }
+      #application-root .rating-page .predict-card {
+        width: auto; } }
+    #application-root .rating-page .predict-card .header {
+      padding: 11px 16px;
+      display: flex;
+      align-items: flex-end; }
+    #application-root .rating-page .predict-card .header span {
+      font-style: italic;
+      font-size: 0.86rem;
+      flex: 2;
+      line-height: 20px; }
+    #application-root .rating-page .predict-card .header .column-title {
+      flex: 2;
+      font-weight: bold;
+      opacity: 0.3;
+      color: white;
+      font-size: 0.63rem;
+      font-style: normal;
+      text-align: center;
+      letter-spacing: 1.05px;
+      line-height: 15px; }
+    #application-root .rating-page .predict-card .header .column-headline {
+      display: flex;
+      flex: 3; }
+    #application-root .rating-page .predict-card .content {
+      padding: 14px 16px 14px 16px;
+      border-top: 0.5px solid rgba(255, 255, 255, 0.4); }
+    #application-root .rating-page .predict-card .content .line {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 8px; }
+    #application-root .rating-page .predict-card .content .predict-label {
+      flex: 1; }
+    #application-root .rating-page .predict-card .content .line .line-bar {
+      display: flex;
+      flex-direction: row;
+      flex: 2;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: 5px; }
+    #application-root .rating-page .predict-card .content .line .line-bar.narrow {
+      flex: 1; }
+    #application-root .rating-page .predict-card .btc-label {
+      flex: 3; }
+    #application-root .rating-page .predict-card .content span {
+      opacity: 0.8;
+      color: white;
+      font-size: 0.8125rem;
+      line-height: 18px; }
+    #application-root .rating-page .predict-card .content .digit {
+      white-space: nowrap;
+      text-align: center;
+      opacity: 0.3;
+      color: white;
+      font-weight: bold;
+      flex: 0.3;
+      font-size: 0.6875rem;
+      letter-spacing: 1.08px; }
+    #application-root .rating-page .predict-card.right .content .digit {
+      flex: 0.7; }
+    #application-root .rating-page .table-scroll-wrapper {
+      overflow-x: auto; }
+    #application-root .rating-page .table-section {
+      margin: 0 -20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: auto; }
+    #application-root .rating-page .table-section .scroll-wrapper {
+      width: 100%; }
+    @media screen and (max-width: 800px) {
+      #application-root .rating-page .table-section {
+        align-items: flex-start; }
+      #application-root .rating-page .table-section .scroll-wrapper {
+        width: 800px; } }
+    #application-root .rating-page .table-row {
+      justify-content: space-evenly;
+      align-self: stretch;
+      padding: 0 20px; }
+    #application-root .rating-page .table-row.dark {
+      background-color: #0b192e; }
+    #application-root .rating-page .table-row.light {
+      background-color: #102442; }
+    #application-root .rating-page .table-row.header .row-group {
+      padding: 10px 0 0 0; }
+    #application-root .rating-page .row-group {
+      flex: 0.8;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+      padding: 4px 0; }
+    #application-root .rating-page .row-group.name {
+      flex: 1.5;
+      justify-content: flex-start; }
+    #application-root .rating-page .row-group.name span {
+      font-weight: normal; }
+    #application-root .rating-page .row-group img {
+      margin-left: 20px;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      margin-right: 12px; }
+    @media screen and (max-width: 800px) {
+      #application-root .rating-page .row-group img {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px; } }
+    #application-root .rating-page .row-group span {
+      font-size: 0.69rem;
+      letter-spacing: 1.08px;
+      font-weight: bold; }
+    #application-root .rating-page .row-group.name .order {
+      text-align: end;
+      font-size: 1rem;
+      white-space: nowrap;
+      flex: 0.3;
+      letter-spacing: 0px;
+      font-weight: 300; }
+    #application-root .rating-page .row-group.bsh {
+      flex: 2; }
+    #application-root .rating-page .row-group .coin-name {
+      flex: 1;
+      letter-spacing: 0;
+      font-size: 0.75rem; }
+    #application-root .rating-page .row-group .triangle {
+      font-size: 0.69rem; }
+    #application-root .rating-page .table-row.header {
+      border-bottom: 0.5px solid #566476; }
+    #application-root .rating-page .table-row.header span {
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.6875rem;
+      color: #566476;
+      letter-spacing: 0.46px; }
+    #application-root .rating-page .row-group.price span {
+      flex: 1;
+      text-align: start;
+      text-align: center; }
+    #application-root .rating-page .row-group.projection span {
+      flex: 1;
+      text-align: center;
+      letter-spacing: 1.05px; }
+    #application-root .rating-page footer {
+      display: flex;
+      align-items: center;
+      margin-bottom: -20px; }
+    #application-root .rating-page footer img {
+      margin-top: -25px;
+      height: 150px; }
+    #application-root .rating-page .footer-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+    #application-root .rating-page .footer-wrapper .logo-wrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 200px;
+      margin-top: -35px; }
+    @media screen and (max-width: 800px) {
+      #application-root .rating-page footer img {
+        display: none; }
+      #application-root .rating-page .footer-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center; }
+      #application-root .rating-page .footer-wrapper .logo-wrapper {
+        margin-top: 0px; } }
+    #application-root .rating-page .footer-wrapper .logo-wrapper .description {
+      font-size: 0.875rem;
+      letter-spacing: -0.07px;
+      margin-top: 15px;
+      font-weight: 600;
+      line-height: 20px; }
+    #application-root .rating-page .disclamer-wrapper {
+      display: flex;
+      flex: 2; }
+    #application-root .rating-page .disclamer-wrapper span {
+      color: #e9ebf1;
+      opacity: 0.5;
+      font-size: 0.57rem; }
 
 
-/*# sourceMappingURL=main.bundle.98f74eba05b8639a19ae.css.map*/
+/*# sourceMappingURL=main.bundle.5ee34ee443dd0131d4a3.css.map*/
