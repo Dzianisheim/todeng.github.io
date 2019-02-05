@@ -1,3 +1,21 @@
+.price-indicator.red {
+  animation: redblink 1s 1; }
+
+.price-indicator.green {
+  animation: greenblink 1s 1; }
+
+@keyframes redblink {
+  0% {
+    background-color: #ff4048; }
+  100% {
+    background-color: rgba(0, 0, 0, 0); } }
+
+@keyframes greenblink {
+  0% {
+    background-color: #41b549; }
+  100% {
+    background-color: rgba(0, 0, 0, 0); } }
+
 .coin-rating-header {
   width: 100%;
   background: linear-gradient(to bottom, #102442 2%, #0b192e 100%);
@@ -19,7 +37,8 @@
       .coin-rating-header .coin-header-section .coin-data .coin-name {
         font-size: 2.4em; }
       .coin-rating-header .coin-header-section .coin-data .coin-indicators {
-        margin-top: 5px; }
+        margin-top: 5px;
+        width: 250px; }
         .coin-rating-header .coin-header-section .coin-data .coin-indicators .indicator {
           float: left;
           font-size: 0.8em;
@@ -925,4 +944,4 @@ body {
     font-size: 0.57rem; }
 
 
-/*# sourceMappingURL=main.bundle.43560fd17435a51c3405.css.map*/
+/*# sourceMappingURL=main.bundle.4d21ba4dbc7cd73dfd19.css.map*/
