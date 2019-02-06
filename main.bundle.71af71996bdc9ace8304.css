@@ -105,27 +105,30 @@
     clear: both; }
 
 .progress-bar {
-  position: relative; }
-  .progress-bar .progress-bar-indicator-wrapper {
-    display: inline-block;
-    position: relative;
-    min-width: 50px;
-    min-height: 8px;
-    border-radius: 4px;
-    background-color: #233043;
-    overflow: hidden;
-    width: calc(100% - 50px); }
-    .progress-bar .progress-bar-indicator-wrapper .progress-bar-indicator {
-      position: absolute;
-      height: 100%;
-      background-color: #5EAC03;
-      border-radius: 4px; }
+  position: relative;
+  line-height: 1.4em; }
+  .progress-bar .progress-bar-indicator {
+    margin-right: 2em; }
+    .progress-bar .progress-bar-indicator .progress-bar-indicator-thumb-wrapper {
+      position: relative;
+      min-height: 8px;
+      border-radius: 4px;
+      background-color: #233043;
+      overflow: hidden; }
+      .progress-bar .progress-bar-indicator .progress-bar-indicator-thumb-wrapper .progress-bar-indicator-thumb {
+        position: absolute;
+        height: 100%;
+        background-color: #5EAC03;
+        border-radius: 4px; }
   .progress-bar .progress-bar-value {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
     color: #697382;
     font-size: 0.8em;
-    padding-left: 10px;
-    display: inline-block;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 0.8em; }
 
 .coin-rating-section .section-header .rating {
   float: right;
@@ -188,11 +191,11 @@
       margin-left: 0px;
       width: 40px;
       font-weight: bold; }
-    .coin-rating-section .section-body .coin-rating-section-item .progress-value.red .progress-bar .progress-bar-indicator {
+    .coin-rating-section .section-body .coin-rating-section-item .progress-value.red .progress-bar .progress-bar-indicator-thumb {
       background-color: #B81212; }
-    .coin-rating-section .section-body .coin-rating-section-item .progress-value.blue .progress-bar .progress-bar-indicator {
+    .coin-rating-section .section-body .coin-rating-section-item .progress-value.blue .progress-bar .progress-bar-indicator-thumb {
       background-color: #2C90D7; }
-    .coin-rating-section .section-body .coin-rating-section-item .progress-value.green .progress-bar .progress-bar-indicator {
+    .coin-rating-section .section-body .coin-rating-section-item .progress-value.green .progress-bar .progress-bar-indicator-thumb {
       background-color: #5EAC03; }
   .coin-rating-section .section-body .coin-rating-section-item .progress-value.active.red .progress-bar-value, .coin-rating-section .section-body .coin-rating-section-item .progress-value.active.red .label {
     color: #B81212; }
@@ -226,27 +229,41 @@
   .coin-ratings-trend-section table.coin-ratings-trend-table .last-col {
     padding-right: 20px; }
 
-.coin-price-sentiment-section .section-body .section-item {
-  float: left;
-  width: 50%; }
-  .coin-price-sentiment-section .section-body .section-item .section-item-title {
-    margin-bottom: 10px;
-    font-style: italic;
-    font-size: 1em; }
-  .coin-price-sentiment-section .section-body .section-item table {
-    width: 100%; }
-    .coin-price-sentiment-section .section-body .section-item table tr th {
-      text-align: left;
-      color: #697382;
-      font-size: 0.8em; }
-
-.coin-price-sentiment-section .section-body:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.coin-price-sentiment-section .section-body .progress-bar-indicator-wrapper {
-  height: 9px; }
+.coin-price-sentiment-section .section-body {
+  margin-left: -40px; }
+  .coin-price-sentiment-section .section-body .section-item {
+    float: left;
+    width: 50%; }
+    .coin-price-sentiment-section .section-body .section-item .section-item-title {
+      margin-bottom: 10px;
+      font-style: italic;
+      font-size: 1em; }
+    .coin-price-sentiment-section .section-body .section-item .table-container {
+      margin-left: 40px; }
+    .coin-price-sentiment-section .section-body .section-item table {
+      width: 100%;
+      table-layout: auto; }
+      .coin-price-sentiment-section .section-body .section-item table td, .coin-price-sentiment-section .section-body .section-item table th {
+        white-space: nowrap; }
+      .coin-price-sentiment-section .section-body .section-item table thead th {
+        text-align: right;
+        color: #697382;
+        font-size: 0.8em; }
+      .coin-price-sentiment-section .section-body .section-item table thead th.legend-title {
+        font-style: italic;
+        font-size: 1em;
+        color: #DDDEE1;
+        text-align: left; }
+      .coin-price-sentiment-section .section-body .section-item table tbody tr th {
+        text-align: left;
+        color: #697382;
+        font-size: 0.8em; }
+  .coin-price-sentiment-section .section-body:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .coin-price-sentiment-section .section-body .progress-bar-indicator-wrapper {
+    height: 9px; }
 
 .coin-price-sentiment-section .direction-prediction-section-item th {
   width: 150px; }
@@ -254,11 +271,18 @@
 .coin-price-sentiment-section .direction-prediction-section-item tr {
   line-height: 1.8em; }
 
+.coin-price-sentiment-section .worth-prediction-section-item td {
+  padding-left: 20px; }
+
+.coin-price-sentiment-section .worth-prediction-section-item th {
+  width: 150px; }
+
 .coin-price-sentiment-section .worth-prediction-section-item tr {
   line-height: 1.8em; }
 
 .coin-news-section .section-body {
-  margin-left: -20px; }
+  margin-left: -20px;
+  margin-bottom: -20px; }
   .coin-news-section .section-body .news-container .news-item-wrapper {
     float: left;
     width: calc(100% / 3); }
@@ -316,7 +340,8 @@
 .coin-ratings-layout {
   color: #DDDEE1;
   font-family: 'Open Sans';
-  min-width: 800px; }
+  min-width: 800px;
+  margin-bottom: 80px; }
   .coin-ratings-layout .container {
     margin: 0 auto;
     width: 840px;
@@ -944,4 +969,4 @@ body {
     font-size: 0.57rem; }
 
 
-/*# sourceMappingURL=main.bundle.d2dc3677f2e9c5c74d1d.css.map*/
+/*# sourceMappingURL=main.bundle.71af71996bdc9ace8304.css.map*/
