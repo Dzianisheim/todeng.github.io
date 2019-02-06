@@ -35,7 +35,8 @@
     .coin-rating-header .coin-header-section .coin-data {
       float: left; }
       .coin-rating-header .coin-header-section .coin-data .coin-name {
-        font-size: 2.4em; }
+        font-size: 2.4em;
+        color: white; }
       .coin-rating-header .coin-header-section .coin-data .coin-indicators {
         margin-top: 5px;
         width: 250px; }
@@ -43,10 +44,14 @@
           float: left;
           font-size: 0.8em;
           margin-top: 5px;
-          width: 50%; }
+          width: 50%;
+          color: white; }
+          .coin-rating-header .coin-header-section .coin-data .coin-indicators .indicator .value {
+            font-weight: bold; }
           .coin-rating-header .coin-header-section .coin-data .coin-indicators .indicator .label {
             display: inline-block;
-            color: #697382; }
+            font-weight: normal;
+            opacity: 0.6; }
           .coin-rating-header .coin-header-section .coin-data .coin-indicators .indicator.green .value {
             color: #41b549; }
           .coin-rating-header .coin-header-section .coin-data .coin-indicators .indicator.red .value {
@@ -74,19 +79,21 @@
       border-radius: 5px; }
     .coin-rating-header .social-header-section .app-reference .app-info {
       float: left;
-      margin-left: 5px; }
-      .coin-rating-header .social-header-section .app-reference .app-info .app-name span {
-        color: #41b549; }
-        .coin-rating-header .social-header-section .app-reference .app-info .app-name span span {
-          color: #ff4048; }
-          .coin-rating-header .social-header-section .app-reference .app-info .app-name span span span {
-            color: #207abf; }
+      margin-left: 10px; }
+      .coin-rating-header .social-header-section .app-reference .app-info .app-logo {
+        height: 1em;
+        margin-top: 3px; }
+        .coin-rating-header .social-header-section .app-reference .app-info .app-logo svg {
+          height: 100%; }
       .coin-rating-header .social-header-section .app-reference .app-info .twitter-link {
         text-decoration: none;
         color: white;
         letter-spacing: 0.76px;
         font-size: 0.8em;
-        opacity: 0.8; }
+        opacity: 0.8;
+        margin-top: 5px; }
+        .coin-rating-header .social-header-section .app-reference .app-info .twitter-link svg {
+          margin-right: 3px; }
     .coin-rating-header .social-header-section .app-reference:after {
       content: "";
       display: table;
@@ -133,7 +140,8 @@
 .coin-rating-section .section-header .rating {
   float: right;
   padding: 0px 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  font-weight: bold; }
   .coin-rating-section .section-header .rating.grey {
     background-color: rgba(255, 255, 255, 0.3); }
   .coin-rating-section .section-header .rating.red {
@@ -173,10 +181,10 @@
         line-height: 20px; }
     .coin-rating-section .section-body .coin-rating-section-item .content .title {
       display: inline-block;
-      color: #697382;
       font-size: 0.8em;
-      font-weight: bold;
-      margin-bottom: 5px; }
+      font-weight: normal;
+      margin-bottom: 5px;
+      opacity: 0.4; }
     .coin-rating-section .section-body .coin-rating-section-item .payload {
       font-size: 0.9em; }
   .coin-rating-section .section-body .coin-rating-section-item .progress-value {
@@ -215,11 +223,13 @@
     border: none; }
   .coin-ratings-trend-section table.coin-ratings-trend-table thead th {
     color: #697382;
-    font-size: 0.7em;
+    font-size: 0.75em;
     font-weight: bold;
-    padding-bottom: 10px; }
+    padding-bottom: 5px; }
   .coin-ratings-trend-section table.coin-ratings-trend-table tbody tr:nth-child(2n) {
     background-color: #172438; }
+  .coin-ratings-trend-section table.coin-ratings-trend-table tbody th {
+    font-weight: normal; }
   .coin-ratings-trend-section table.coin-ratings-trend-table th, .coin-ratings-trend-section table.coin-ratings-trend-table td {
     text-align: center;
     line-height: 2.6em; }
@@ -290,7 +300,7 @@
     margin-left: 20px;
     text-decoration: none;
     display: block;
-    color: #DDDEE1;
+    color: #FFFFFF;
     margin-bottom: 20px; }
     .coin-news-section .section-body .news-container .news-item .image {
       width: 100%;
@@ -338,7 +348,7 @@
   font-size: 1.4em !important; }
 
 .coin-ratings-layout {
-  color: #DDDEE1;
+  color: #FFFFFF;
   font-family: 'Open Sans';
   min-width: 800px;
   margin-bottom: 80px; }
@@ -521,10 +531,14 @@ body {
   @media screen and (max-width: 800px) {
     #application-root .rating-page .title-text {
       flex-wrap: wrap; } }
+  #application-root .rating-page .logo {
+    height: 22px;
+    margin-top: 5px; }
   #application-root .rating-page .header-title {
     white-space: nowrap;
     display: inline;
-    font-size: 1.66rem; }
+    font-size: 1.66rem;
+    margin-left: 10px; }
   #application-root .rating-page .title-text .logo-text {
     margin-right: 10px; }
   #application-root .rating-page .title .description {
@@ -969,4 +983,4 @@ body {
     font-size: 0.57rem; }
 
 
-/*# sourceMappingURL=main.bundle.71af71996bdc9ace8304.css.map*/
+/*# sourceMappingURL=main.bundle.8aa2aad7116de83f073d.css.map*/
