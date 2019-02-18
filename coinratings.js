@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "adf1b149e4ac43aacc82";
+/******/ 	var hotCurrentHash = "cb560f0fabf311ce2741";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -22730,7 +22730,7 @@ Backoff.prototype.setJitter = function(jitter){
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495811411
+      // 1550496309757
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -24656,7 +24656,7 @@ module.exports = isObjectLike;
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495810119
+      // 1550496308320
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -25193,7 +25193,7 @@ function innerWidth(el) {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495811196
+      // 1550496309493
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -25206,7 +25206,7 @@ function innerWidth(el) {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495810110
+      // 1550496308327
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -25219,7 +25219,7 @@ function innerWidth(el) {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495810103
+      // 1550496308305
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -25741,7 +25741,7 @@ function clamp(value, min, max) {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495810130
+      // 1550496308332
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -29275,7 +29275,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495810906
+      // 1550496309195
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -29288,7 +29288,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495808968
+      // 1550496307151
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -29301,7 +29301,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495809556
+      // 1550496307751
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -29323,7 +29323,7 @@ module.exports = Array.isArray || function (arr) {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495809807
+      // 1550496307764
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -40959,7 +40959,7 @@ function (_Component) {
     asyncToGenerator_default()(
     /*#__PURE__*/
     regenerator_default.a.mark(function _callee() {
-      var response, body, _body$data$map$filter, valuation, bitcoin, cryptoConfidenceIndex;
+      var response, body, coins, _body$data, valuation, bitcoin, cryptoConfidenceIndex, mapCoins;
 
       return regenerator_default.a.wrap(function _callee$(_context) {
         while (1) {
@@ -40975,14 +40975,16 @@ function (_Component) {
 
             case 5:
               body = _context.sent;
-              _body$data$map$filter = body.data(body.data.coins || []).map(coinMapper).filter(function (coin) {
+              coins = (body.data || {}).coins || [];
+              _body$data = body.data, valuation = _body$data.valuation, bitcoin = _body$data.bitcoin, cryptoConfidenceIndex = _body$data.cryptoConfidenceIndex;
+              mapCoins = coins.map(coinMapper).filter(function (coin) {
                 return coin !== undefined;
-              }), valuation = _body$data$map$filter.valuation, bitcoin = _body$data$map$filter.bitcoin, cryptoConfidenceIndex = _body$data$map$filter.cryptoConfidenceIndex;
+              });
 
               _this.setState(function (state) {
                 return objectSpread_default()({}, state, {
                   confidence: confidenceMapper(cryptoConfidenceIndex),
-                  //top3: coins.slice(0, 3),
+                  top3: mapCoins.slice(0, 3),
                   //rest7: coins.slice(3, coins.length),
                   valuation: mappers_valuationMapper(valuation).reverse(),
                   bitcoinPredict: mappers_bitcoinPredictMapper(bitcoin),
@@ -40990,7 +40992,7 @@ function (_Component) {
                 });
               });
 
-            case 8:
+            case 10:
             case "end":
               return _context.stop();
           }
