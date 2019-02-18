@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "084e13afbad3bef2b199";
+/******/ 	var hotCurrentHash = "adf1b149e4ac43aacc82";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -22730,7 +22730,7 @@ Backoff.prototype.setJitter = function(jitter){
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495435707
+      // 1550495811411
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -24656,7 +24656,7 @@ module.exports = isObjectLike;
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495434423
+      // 1550495810119
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -25193,7 +25193,7 @@ function innerWidth(el) {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495435506
+      // 1550495811196
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -25206,7 +25206,7 @@ function innerWidth(el) {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495434413
+      // 1550495810110
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -25219,7 +25219,7 @@ function innerWidth(el) {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495434406
+      // 1550495810103
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -25741,7 +25741,7 @@ function clamp(value, min, max) {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495434434
+      // 1550495810130
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -29275,7 +29275,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495435208
+      // 1550495810906
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -29288,7 +29288,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495433279
+      // 1550495808968
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -29301,7 +29301,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495433844
+      // 1550495809556
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -29323,7 +29323,7 @@ module.exports = Array.isArray || function (arr) {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1550495434110
+      // 1550495809807
       var cssReload = __webpack_require__(20)(module.i, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);;
@@ -40959,7 +40959,7 @@ function (_Component) {
     asyncToGenerator_default()(
     /*#__PURE__*/
     regenerator_default.a.mark(function _callee() {
-      var response, body, _body$data, valuation, bitcoin, cryptoConfidenceIndex;
+      var response, body, _body$data$map$filter, valuation, bitcoin, cryptoConfidenceIndex;
 
       return regenerator_default.a.wrap(function _callee$(_context) {
         while (1) {
@@ -40975,7 +40975,9 @@ function (_Component) {
 
             case 5:
               body = _context.sent;
-              _body$data = body.data, valuation = _body$data.valuation, bitcoin = _body$data.bitcoin, cryptoConfidenceIndex = _body$data.cryptoConfidenceIndex; //const coins = (body.data.coins || []).map(mappers.coinMapper).filter((coin) => coin !== undefined)
+              _body$data$map$filter = body.data(body.data.coins || []).map(coinMapper).filter(function (coin) {
+                return coin !== undefined;
+              }), valuation = _body$data$map$filter.valuation, bitcoin = _body$data$map$filter.bitcoin, cryptoConfidenceIndex = _body$data$map$filter.cryptoConfidenceIndex;
 
               _this.setState(function (state) {
                 return objectSpread_default()({}, state, {
