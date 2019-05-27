@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.fdfa9154.chunk.css",
-    "main.js": "/static/js/main.502a83bf.chunk.js",
-    "main.js.map": "/static/js/main.502a83bf.chunk.js.map",
+    "main.css": "/static/css/main.c3239052.chunk.css",
+    "main.js": "/static/js/main.ca142161.chunk.js",
+    "main.js.map": "/static/js/main.ca142161.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/css/2.32bbf376.chunk.css": "/static/css/2.32bbf376.chunk.css",
-    "static/js/2.e8723b7e.chunk.js": "/static/js/2.e8723b7e.chunk.js",
-    "static/js/2.e8723b7e.chunk.js.map": "/static/js/2.e8723b7e.chunk.js.map",
+    "static/js/2.60b82d6d.chunk.js": "/static/js/2.60b82d6d.chunk.js",
+    "static/js/2.60b82d6d.chunk.js.map": "/static/js/2.60b82d6d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ef47473b208ea9126cd82869dc26f87b.js": "/precache-manifest.ef47473b208ea9126cd82869dc26f87b.js",
+    "precache-manifest.f775f5cd0ecb9046008a67015255165a.js": "/precache-manifest.f775f5cd0ecb9046008a67015255165a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.32bbf376.chunk.css.map": "/static/css/2.32bbf376.chunk.css.map",
-    "static/css/main.fdfa9154.chunk.css.map": "/static/css/main.fdfa9154.chunk.css.map",
+    "static/css/main.c3239052.chunk.css.map": "/static/css/main.c3239052.chunk.css.map",
+    "static/media/App.scss": "/static/media/Calibri.d3ac1e99.woff",
     "static/media/PokemonEvolutionChain.scss": "/static/media/arrow.9baaf521.svg",
     "static/media/logo.png": "/static/media/logo.23b9c66f.png"
   }
